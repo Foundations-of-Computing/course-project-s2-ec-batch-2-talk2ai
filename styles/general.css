@@ -1,0 +1,111 @@
+/*CSS PART:*/
+* {
+  box-sizing: border-box;
+  color-scheme: dark light;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100svh;
+  background: #101010;
+}
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.responses-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60ch;
+  max-width: 90svw;
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: 'Times New Roman', Times, serif;
+  max-height: 500px;
+  overflow: auto;
+  opacity: 0;
+}
+
+.microphone-icon {
+  height: 100px;
+}
+.microphone-button {
+  -webkit-tap-highlight-color: transparent;
+  border: none;
+  padding: 2rem;
+  border-radius: 999px;
+  margin-bottom: 20px;
+  background: #ffffff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.microphone-button:hover {
+  background-color: #bbb;
+  transform: scale(1.1);
+}
+.microphone-button:active {
+  transform: scale(0.8);
+}
+.microphone-div {
+  text-align: center;
+}
+.search-bar {
+  margin-top: 20px;
+}
+.search-bar input {
+  border-radius: 5px;
+  border: 2px solid #dedede;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  width: 220px;
+}
+.search-bar input:focus {
+  max-width: 90svw;
+  width: 65ch;
+  outline: none;
+  border-color: aqua;
+  transition: all 0.2s ease;
+}
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  height: 75px;
+  text-align: center;
+}
+
+.message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+  background: #333;
+  color: white;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.message.user {
+  background: aqua;
+  color: black;
+  text-align: right;
+  align-self: flex-end;
+}
